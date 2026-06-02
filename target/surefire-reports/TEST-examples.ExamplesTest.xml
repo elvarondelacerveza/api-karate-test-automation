@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="7.456" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="apiKey" value="123"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\decon\Documents\api-karate-test-automation\target\test-classes;C:\Users\decon\Documents\api-karate-test-automation\target\classes;C:\Users\decon\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\decon\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\decon\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\decon\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\decon\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\decon\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\decon\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\decon\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\decon\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\decon\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\decon\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\decon\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\decon\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\decon\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\decon\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\decon\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\decon\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\decon\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\decon\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\decon\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\decon\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\decon\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\decon\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\decon\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\decon\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\decon\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\decon\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\decon\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\decon\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\decon\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\decon\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\decon\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\decon\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\decon\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\decon\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\decon\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\decon\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\decon\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\decon\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\decon\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\decon\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\decon\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\decon\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="MX"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\decon\AppData\Local\Temp\surefire16495902465199724034\surefirebooter-20260602095638966_3.jar C:\Users\decon\AppData\Local\Temp\surefire16495902465199724034 2026-06-02T09-56-38_772-jvmRun1 surefire-20260602095638966_1tmp surefire_0-20260602095638966_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\decon\Documents\api-karate-test-automation\target\test-classes;C:\Users\decon\Documents\api-karate-test-automation\target\classes;C:\Users\decon\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\decon\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\decon\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\decon\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\decon\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\decon\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\decon\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\decon\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\decon\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\decon\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\decon\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\decon\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\decon\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\decon\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\decon\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\decon\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\decon\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\decon\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\decon\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\decon\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\decon\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\decon\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\decon\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\decon\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\decon\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\decon\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\decon\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\decon\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\decon\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\decon\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\decon\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\decon\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\decon\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\decon\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\decon\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\decon\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\decon\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\decon\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\decon\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\decon\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\decon\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\decon\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\decon\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\decon\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\decon\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\decon\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\decon"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\decon\Documents\api-karate-test-automation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\decon\AppData\Local\Temp\surefire16495902465199724034\surefirebooter-20260602095638966_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
+    <property name="user.name" value="decon"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\decon\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\decon\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2022.3.2"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="C:\Users\decon\Documents\api-karate-test-automation"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ffmpeg\bin;C:\ffmpeg\bin;C:\ffmpeg\bin;C:\WINDOWS\System32;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-19.0.2\bin;D:\Android\SDK\platform-tools;D:\Android\SDK\cmdline-tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Users\decon\OneDrive\Escritorio\JMeter\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-19.0.2\bin;D:\Android\SDK\platform-tools;D:\Android\SDK\cmdline-tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Users\decon\OneDrive\Escritorio\JMeter\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-19.0.2\bin;D:\Android\SDK\platform-tools;D:\Android\SDK\cmdline-tools;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\strawberry\c\bin;C:\strawberry\perl\bin;C:\Users\decon\OneDrive\Escritorio\JMeter\apache-jmeter-5.6.3\apache-jmeter-5.6.3\bin;C:\Program Files\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\decon\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\decon\AppData\Local\Programs\Python\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\decon\AppData\Local\Android\Sdk\tools\bin;C:\Users\decon\AppData\Local\Android\Sdk\tools;C:\Users\decon\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;C:\apache-maven-3.9.1-bin\apache-maven-3.9.1\bin;C:\Program Files\Java\jdk-11\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\decon\AppData\Local\Microsoft\WindowsApps;C:\Program Files\nodejs\node_modules\npm\bin;C:\Users\decon\AppData\Local\Programs\Microsoft VS Code\bin;C:\WebDriver\bin;C:\Users\decon\AppData\Local\Microsoft\WindowsApps;C:\Users\decon\AppData\Roaming\npm;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.7+8-LTS-224"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="7.407">
+    <failure message="status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/protected-basic, response: &#10;{&quot;status&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Pet not found&quot;,&quot;data&quot;:null}&#10;classpath:examples/pets/pets/pets.feature:66&#10;status code was: 404, expected: 401, response time in milliseconds: 7, url: http://localhost:3000/pets/protected-basic, response: &#10;{&quot;status&quot;:&quot;error&quot;,&quot;message&quot;:&quot;Pet not found&quot;,&quot;data&quot;:null}&#10;classpath:examples/pets/pets/pets.feature:76&#10;status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/login, response: &#10;&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&quot;en&quot;&gt;&#10;&lt;head&gt;&#10;&lt;meta charset=&quot;utf-8&quot;&gt;&#10;&lt;title&gt;Error&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;&lt;pre&gt;Cannot POST /pets/login&lt;/pre&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;&#10;&#10;classpath:examples/pets/pets/pets.feature:83 ==&gt; expected: &lt;0&gt; but was: &lt;3&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:66
+status code was: 404, expected: 401, response time in milliseconds: 7, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:76
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/login, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /pets/login</pre>
+</body>
+</html>
+
+classpath:examples/pets/pets/pets.feature:83 ==> expected: <0> but was: <3>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[09:56:42.217 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:56:42.231 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1780415802224
+09:56:44.706 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:44.706 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:44.706 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:44.706 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:44.706 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:44.916 [pool-2-thread-1] INFO  com.intuit.karate - [print] la url es:  http://localhost:3000 
+09:56:44.918 [pool-2-thread-1] INFO  com.intuit.karate - [print] el apikey es:  123 
+09:56:45.443 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/pets
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Bingo3","type":"Perro","age":1}
+
+09:56:45.443 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/pets
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Bingo3","type":"Perro","age":1}
+
+09:56:45.443 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/pets
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Bingo3","type":"Perro","age":1}
+
+09:56:45.443 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/pets
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Bingo3","type":"Perro","age":1}
+
+09:56:45.443 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/pets
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 40
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"name":"Bingo3","type":"Perro","age":1}
+
+09:56:45.519 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 70
+1 < 201
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 111
+1 < ETag: W/"6f-5Bb4FZy5GA0JMgOsWg3D0kfpMTw"
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet created","data":{"id":1780415805504,"name":"Bingo3","type":"Perro","age":1}}
+
+09:56:45.519 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 71
+1 < 201
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 111
+1 < ETag: W/"6f-4moySWtp2y4jNFsBT8QkTH+vxhU"
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet created","data":{"id":1780415805513,"name":"Bingo3","type":"Perro","age":1}}
+
+09:56:45.519 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 70
+1 < 201
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 111
+1 < ETag: W/"6f-G9pWp8ef4jgOCDTG50vjoxUytMM"
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet created","data":{"id":1780415805509,"name":"Bingo3","type":"Perro","age":1}}
+
+09:56:45.519 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 70
+1 < 201
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 111
+1 < ETag: W/"6f-jiuwbI5DEXunmBca4fII32EhivE"
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet created","data":{"id":1780415805499,"name":"Bingo3","type":"Perro","age":1}}
+
+09:56:45.519 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 71
+1 < 201
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 111
+1 < ETag: W/"6f-c/R+uXWvR37l5dhHoM5NImAHcJU"
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet created","data":{"id":1780415805496,"name":"Bingo3","type":"Perro","age":1}}
+
+09:56:45.568 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:45.571 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+2 > GET http://localhost:3000/pets/1780415805513
+2 > Host: localhost:3000
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:56:45.571 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+2 > DELETE http://localhost:3000/pets/1780415805496
+2 > Host: localhost:3000
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:56:45.572 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+2 > PATCH http://localhost:3000/pets/1780415805499
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 16
+2 > Host: localhost:3000
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Bluey"}
+
+09:56:45.572 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+2 > PUT http://localhost:3000/pets/1780415805509
+2 > Content-Type: application/json; charset=UTF-8
+2 > Content-Length: 40
+2 > Host: localhost:3000
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+2 > Accept-Encoding: gzip,deflate
+{"name":"Bingo8","type":"Gato","age":10}
+
+09:56:45.580 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 8
+2 < 204
+2 < X-Powered-By: Express
+2 < ETag: W/"38-wb8iw8b8FsxeeJAkWfcWHgal72I"
+2 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+2 < Connection: keep-alive
+2 < Keep-Alive: timeout=5
+
+
+09:56:45.581 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 9
+2 < 200
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 123
+2 < ETag: W/"7b-QV8kXlFP/1xFAtbCaFmhKDPhPRQ"
+2 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+2 < Connection: keep-alive
+2 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet updated successfully","data":{"id":1780415805499,"name":"Bluey","type":"Perro","age":1}}
+
+09:56:45.586 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 14
+2 < 200
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 111
+2 < ETag: W/"6f-5dSGcGdI10NhqUSptvbbakmUykk"
+2 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+2 < Connection: keep-alive
+2 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet updated","data":{"id":1780415805509,"name":"Bingo8","type":"Gato","age":10}}
+
+09:56:45.588 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 16
+2 < 200
+2 < X-Powered-By: Express
+2 < Content-Type: application/json; charset=utf-8
+2 < Content-Length: 109
+2 < ETag: W/"6d-yOUxI+r7fTdQcXatfDwh/m/XjLc"
+2 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+2 < Connection: keep-alive
+2 < Keep-Alive: timeout=5
+{"status":"success","message":"Pet found","data":{"id":1780415805513,"name":"Bingo3","type":"Perro","age":1}}
+
+09:56:45.601 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:45.602 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+09:56:45.609 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/pets/login
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 25
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"username":"automation"}
+
+09:56:45.615 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < X-Powered-By: Express
+1 < Content-Security-Policy: default-src 'none'
+1 < X-Content-Type-Options: nosniff
+1 < Content-Type: text/html; charset=utf-8
+1 < Content-Length: 150
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /pets/login</pre>
+</body>
+</html>
+
+
+09:56:45.619 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/pets/protected-basic
+1 > Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM0
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:56:45.619 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/pets/protected-basic
+1 > Authorization: Basic YWRtaW46cGFzc3dvcmQxMjM=
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:56:45.625 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 5
+1 < 404
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 56
+1 < ETag: W/"38-kfIpO9gUiMwJSSu/KOdQd+C1Z84"
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"status":"error","message":"Pet not found","data":null}
+
+09:56:45.627 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 7
+1 < 404
+1 < X-Powered-By: Express
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 56
+1 < ETag: W/"38-kfIpO9gUiMwJSSu/KOdQd+C1Z84"
+1 < Date: Tue, 02 Jun 2026 15:56:45 GMT
+1 < Connection: keep-alive
+1 < Keep-Alive: timeout=5
+{"status":"error","message":"Pet not found","data":null}
+
+09:56:45.630 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/pets/pets/pets.feature:76
+Then status 401
+status code was: 404, expected: 401, response time in milliseconds: 7, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:76
+09:56:45.630 [pool-2-thread-1] ERROR com.intuit.karate - classpath:examples/pets/pets/pets.feature:66
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:66
+09:56:45.630 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/pets/pets/pets.feature:83
+And status 200
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/login, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /pets/login</pre>
+</body>
+</html>
+
+classpath:examples/pets/pets/pets.feature:83
+---------------------------------------------------------
+feature: classpath:examples/pets/pets/pets.feature
+scenarios:  8 | passed:  5 | failed:  3 | time: 3.9249
+---------------------------------------------------------
+
+09:56:47.179 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/pets/pets/pets.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   6.56 | threads:    5 | thread time: 3.93 
+features:     1 | skipped:    0 | efficiency: 0.12
+scenarios:    8 | passed:     5 | failed: 3
+======================================================
+>>> failed features:
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:66
+status code was: 404, expected: 401, response time in milliseconds: 7, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:76
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/login, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /pets/login</pre>
+</body>
+</html>
+
+classpath:examples/pets/pets/pets.feature:83
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Users/decon/Documents/api-karate-test-automation/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  </testcase>
+</testsuite>

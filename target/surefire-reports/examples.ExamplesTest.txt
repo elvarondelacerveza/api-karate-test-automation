@@ -1,0 +1,35 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.456 s <<< FAILURE! - in examples.ExamplesTest
+examples.ExamplesTest.testParallel  Time elapsed: 7.407 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:66
+status code was: 404, expected: 401, response time in milliseconds: 7, url: http://localhost:3000/pets/protected-basic, response: 
+{"status":"error","message":"Pet not found","data":null}
+classpath:examples/pets/pets/pets.feature:76
+status code was: 404, expected: 200, response time in milliseconds: 5, url: http://localhost:3000/pets/login, response: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /pets/login</pre>
+</body>
+</html>
+
+classpath:examples/pets/pets/pets.feature:83 ==> expected: <0> but was: <3>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
